@@ -1,0 +1,30 @@
+The Legend of Freya the Frog
+time limit per test2 seconds
+memory limit per test256 megabytes
+Freya the Frog is traveling on the 2D coordinate plane. She is currently at point (0,0) and wants to go to point (𝑥,𝑦). In one move, she chooses an integer 𝑑 such that 0≤𝑑≤𝑘 and jumps 𝑑 spots forward in the direction she is facing.
+
+Initially, she is facing the positive 𝑥 direction. After every move, she will alternate between facing the positive 𝑥 direction and the positive 𝑦 direction (i.e., she will face the positive 𝑦 direction on her second move, the positive 𝑥 direction on her third move, and so on).
+
+What is the minimum amount of moves she must perform to land on point (𝑥,𝑦)?
+
+Input
+The first line contains an integer 𝑡 (1≤𝑡≤104) — the number of test cases.
+
+Each test case contains three integers 𝑥, 𝑦, and 𝑘 (0≤𝑥,𝑦≤109,1≤𝑘≤109).
+
+Output
+For each test case, output the number of jumps Freya needs to make on a new line.
+
+Example
+input
+3
+9 11 3
+0 10 8
+1000000 100000 10
+output
+8
+4
+199999
+Note
+In the first sample, one optimal set of moves is if Freya jumps in the following way: (0,0) → (2,0) → (2,2) → (3,2) → (3,5) → (6,5) → (6,8) → (9,8) → (9,11). This takes 8 jumps.
+
